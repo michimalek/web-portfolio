@@ -42,10 +42,6 @@ contact_links:
     icon_pack: fab
     name: Find me on LinkedIn
     link: 'https://www.linkedin.com/in/michael-malek-a79a9516b/'
-  - icon: github
-    icon_pack: fab
-    name: Find me on GitHub
-    link: 'https://github.com/michimalek'
   - icon: discord
     icon_pack: fab
     name: Find me on Discord
