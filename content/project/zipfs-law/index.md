@@ -9,7 +9,7 @@ date: "2021-12-18T00:00:00Z"
 external_link: ""
 
 image:
-  caption: Photo by rawpixel on Unsplash
+  caption: Polands city populations compared to Zipf's distribution
   focal_point: Smart
 
 links:
@@ -30,12 +30,33 @@ url_video: ""
 slides: ""
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+# Script to compare Zipf's Law to country population
 
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
+### Description
 
-Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.
+This Script's origin is based on an university project concerning Central Place Theory.
+The purpose is to scrap population data from [DBpedia](https://www.dbpedia.org/) and to compare those to the by Zipf's Law defined Distribution.
+DBpedia is a tool to query trough available Wikipedia data with the use of their query language SPARql.
+If you wanna learn more about Zipf's Law feel free to read trough [here](https://en.wikipedia.org/wiki/Zipf%27s_law).
 
-Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.
+To compare the Zipf's distribution to the population frequency distribution of the cities of each country, we used two probability distribution comparison tools namely [Hellinger Distance](https://en.wikipedia.org/wiki/Hellinger_distance) and [Kullback-Leibler Divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence). Those indicate how similar two distributions are from each other.
+When the script is run it prints out some indication of what is going on and at the end prints the results of Hellinger Distance and KL Divergence. The script also creates a logarithmic coordinate system to visually compare the two distributions.
 
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+Short summary of how to understand the resulting values:
+- **Hellinger Distance** describes the degree of similarity between two different probability distributions. It is calculated as a scale between 0 and 1, where 0 being that the two distribution are identical to each other and 1 that
+they are the furthest apart from each other.
+- **Kullback-Leibler Divergence** focuses on information loss
+between two distributions. This is indicated by first mapping the real data to
+the zipf data and afterwards mapping the zipf data to the real data and comparing both results with each other. If the results are close to each other, there is
+almost no information loss and therefore no similarity between the distributions
+and contrarily if the results are far away from each other there is significant
+information loss and therefore the distributions are not similar. 
+
+### Structure
+
+The script consists of three .py files: 
+- *query_graphql.py* prepares the queries and scraps the population data from DBpedia 
+- *zipfs_script.py* prepares the DataFrames and does the statistical calculations to compare both distributions by Hellinger Distance and Kullbeck Divergence.
+- *pipeline.py* combines all steps into one pipeline. This script should be run.
+
+So far the script only receives data from two european countries Poland and Netherlands. Maybe I will be able to add more countries in the future, otherwise an experienced programmer should be able to expand on the code I wrote.
