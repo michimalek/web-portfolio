@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Michael Malek
+title: Michi Malek
 
 # Is this the primary user of the site?
 superuser: true
