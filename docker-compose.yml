@@ -1,0 +1,11 @@
+services:
+  web-portfolio:
+    image: ghcr.io/michimalek/web-portfolio:master
+    container_name: web-portfolio
+    restart: unless-stopped
+    networks:
+      - default
+
+networks:
+  default:
+    external: true
