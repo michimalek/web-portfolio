@@ -4,8 +4,9 @@ services:
     container_name: web-portfolio
     restart: unless-stopped
     networks:
-      - default
+      - web-portfolio
 
 networks:
-  default:
-    external: true
+  web-portfolio:
+    driver: bridge
+    name: web-portfolio
