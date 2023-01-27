@@ -6,34 +6,38 @@ title: Michael Malek
 superuser: true
 
 # Role/position/tagline
-role: Business & IT student
+role: DevOps Engineer & Data Science Student
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: University of Twente
-  url: https://www.utwente.nl/en/
+- name: Speakup BV
+  url: https://speakup.nl/
+- name: Jheronimus Academy of Data Science
+  url: https://www.jads.nl/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Business & IT student at the University of Twente
+bio: DevOps Engineer & Data Science Student
 
 # Interests to show in About widget
 interests:
-- Data Science
-- Business Intelligence
-- Machine Learning
-- Computer Hardware
-- Stocks & Economics
+- Data infrastructure and business intelligence
+- Machine & Deep Learning 
+- Global Economics & Finance
+- Various arts like music, movies and video games
 
 
 # Education to show in About widget
 education:
   courses:
-  - course: Business & Information Technology
+  - course: MSc Data Science in Business & Entrepreneurship
+    institution: Jheronimus Academy of Data Science, Den Bosch
+    year: 2022 - Today
+  - course: BSc Business & Information Technology
     institution: University of Twente, Enschede
-    year: 2019 - Today
-  - course: Abitur
-    institution: Theodor-Heuss-Gymnasium, Pinneberg
-    year: 2019
+    year: 2019 - 2022
+  # - course: Abitur
+  #   institution: Theodor-Heuss-Gymnasium, Pinneberg
+  #   year: 2019
 
 
 # Social/Academic Networking
@@ -71,6 +75,6 @@ email: ""
 highlight_name: true
 ---
 
-I am Michael, was born in Hamburg, Germany and currently study in the Netherlands! During my educational career I was always connected to Technology, therefore I trained myself a skill set and major curiosity based around this topic. I would not call myself a specialist in a specific field of knowledge, but an all-rounder in a lot of different subjects. Besides that, my interests are Movie Theory, Game Design & Finances.
+As a DevOps Engineer, I have experience in designing, implementing, and maintaining scalable and reliable systems. I am skilled in a range of tools and technologies, including automation and orchestration platforms, containerization, and cloud-based solutions. In addition, I am also an experienced Data Analyst with a strong understanding of data modeling, data visualization, statistical analysis, and am able to extract valuable insights from complex datasets. With my diverse skill set and deep understanding of Big Data technologies, I am well-equipped to tackle a wide range of challenges. I am highly sought after for my ability to deliver solutions that drive business value and drive innovation.
 
 <!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->

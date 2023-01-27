@@ -20,10 +20,22 @@ feature:
   icon: python
   icon_pack: fab
   name: Python
+- description: Expert
+  icon: browser
+  icon_pack: fab
+  name: Web Scraping
 - description: Intermediate
-  icon: file-excel
-  icon_pack: fas
-  name: Excel
+  icon: linux
+  icon_pack: fab
+  name: Linux
+- description: Intermediate
+  icon: docker
+  icon_pack: fab
+  name: Docker
+# - description: Intermediate
+#   icon: file-excel
+#   icon_pack: fas
+#   name: Excel
 - description: Intermediate
   icon: database
   icon_pack: fas
@@ -36,26 +48,19 @@ feature:
   icon: github
   icon_pack: fab
   name: GitHub
-- description: Beginner
+- description: Basics
   icon: r-project
   icon_pack: fab
   name: R
-- description: Beginner
-  icon: docker
-  icon_pack: fab
-  name: Docker
-- description: Beginner
+- description: Basics
   icon: code
   icon_pack: fas
   name: Web Development
-- description: Beginner
+- description: Basics
   icon: globe-europe
   icon_pack: fas
   name: QGIS
-- description: Beginner
-  icon: linux
-  icon_pack: fab
-  name: Linux
+
 
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
