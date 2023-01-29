@@ -28,14 +28,15 @@ experience:
     company_url: 'https://speakup.nl/'
     company_logo: org-gc
     location: Netherlands
-    date_start: '2021-08-01'
+    date_start: '2021-05-01'
     date_end: ''
     description: |2-
         Developing an omni-channel text messenger based Open-Source tools. Responsibilities include:
         
         * Managing and creating containers in Portainer
         * Market Research & Data Analysis
-        * Work with VMs, Linux, YAML, Ansible & React
+        * Work with VMs, Linux, YAML & Ansible
+        * Basics of ReactJS
 
   - title: Administrative Assistant
     company: Accredis
