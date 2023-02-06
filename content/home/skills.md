@@ -21,8 +21,8 @@ feature:
   icon_pack: fab
   name: Python
 - description: Expert
-  icon: browser
-  icon_pack: fab
+  icon: download
+  icon_pack: fas
   name: Web Scraping
 - description: Intermediate
   icon: linux
@@ -31,7 +31,7 @@ feature:
 - description: Intermediate
   icon: docker
   icon_pack: fab
-  name: Docker/K8s
+  name: Docker
 # - description: Intermediate
 #   icon: file-excel
 #   icon_pack: fas

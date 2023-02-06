@@ -26,7 +26,7 @@ experience:
   - title: Software Specialist
     company: SpeakUp
     company_url: 'https://speakup.nl/'
-    company_logo: org-gc
+    company_logo: speakup
     location: Netherlands
     date_start: '2021-05-01'
     date_end: ''
@@ -41,7 +41,7 @@ experience:
   - title: Administrative Assistant
     company: Accredis
     company_url: 'https://www.accredis.nl/'
-    company_logo: org-x
+    company_logo: accredis
     location: Netherlands
     date_start: '2020-01-01'
     date_end: '2021-07-31'
@@ -58,7 +58,7 @@ experience:
   - title: Retail Cashier
     company: Famila
     company_url: 'https://www.famila.de/'
-    company_logo: org-x
+    company_logo: famila
     location: Germany
     date_start: '2017-08-01'
     date_end: '2019-05-31'

@@ -75,6 +75,6 @@ email: ""
 highlight_name: true
 ---
 
-As a DevOps Engineer, I have experience in designing, implementing, and maintaining scalable and reliable systems. I am skilled in a range of tools and technologies, including automation and orchestration platforms, containerization, and cloud-based solutions. In addition, I am also an experienced Data Analyst with a strong understanding of data modeling, data visualization, statistical analysis, and am able to extract valuable insights from complex datasets. With my diverse skill set and deep understanding of Big Data technologies, I am well-equipped to tackle a wide range of challenges. I am highly sought after for my ability to deliver solutions that drive business value and drive innovation.
+As a DevOps Engineer, I have experience in designing, implementing, and maintaining scalable and reliable systems. I am skilled in a range of tools and technologies, including automation and orchestration platforms, containerization, and cloud-based solutions. In addition, I am also an experienced Data Analyst with a strong understanding of data modeling, data visualization, statistical analysis, and am able to extract valuable insights from complex datasets. With my diverse skill set and deep understanding of Big Data technologies, I am well-equipped to tackle a wide range of challenges. I am dedicated to deliver solutions that drive business value and innovation.
 
 <!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->
