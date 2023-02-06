@@ -31,7 +31,7 @@ feature:
 - description: Intermediate
   icon: docker
   icon_pack: fab
-  name: Docker
+  name: Docker/K8s
 # - description: Intermediate
 #   icon: file-excel
 #   icon_pack: fas
